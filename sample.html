@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Employee Information Form</h2>
+        <form id="employeeForm">
+            <div class="form-group">
+                <label for="eno">Employee No:</label>
+                <input type="number" class="form-control" id="eno" required>
+            </div>
+            <div class="form-group">
+                <label for="ename">Employee Name:</label>
+                <input type="text" class="form-control" id="ename" required>
+            </div>
+            <div class="form-group">
+                <label for="esal">Employee Salary:</label>
+                <input type="number" class="form-control" id="esal" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="eaddr">Employee Address:</label>
+                <input type="text" class="form-control" id="eaddr" required>
+            </div>
+            <div class="form-group">
+                <label for="married">Employee Married?</label>
+                <select class="form-control" id="married" required>
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
